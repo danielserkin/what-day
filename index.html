@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Day Is It?</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Day Is It?</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -50,42 +50,42 @@
     </style>
 </head>
 <body>
-  <div class="container">
-    <h1>What Day Is It?</h1>
-    <div class="answer" id="answer"></div>
-    <div class="emoji" id="emoji"></div>
-    <p class="message" id="message"></p>
-    <div class="ad-space">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4747589340489317"
-              crossorigin="anonymous"></script>
-      <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4747589340489317"
-             data-ad-slot="7884054052"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-  </div>
-  <script>
-    const dayInfo = [
-      { day: 'Sunday', emoji: '', message: "Relax, it's the weekend!" },
-      { day: 'Monday', emoji: '☕', message: "New week, new opportunities!" },
-      { day: 'Tuesday', emoji: '', message: "Keep the momentum going!" },
-      { day: 'Wednesday', emoji: '', message: "Hump day! Half-way there!" },
-      { day: 'Thursday', emoji: '', message: "One more push before Friday!" },
-      { day: 'Friday', emoji: '', message: "TGIF! Weekend is near!" },
-      { day: 'Saturday', emoji: '', message: "Enjoy your weekend!" }
-    ];
-
-    const today = new Date().getDay();
-    const currentDay = dayInfo[today];
-
-    document.getElementById('answer').textContent = currentDay.day.toUpperCase();
-    document.getElementById('emoji').textContent = currentDay.emoji;
-    document.getElementById('message').textContent = currentDay.message;
-  </script>
+    <div class="container">
+        <h1>What Day Is It?</h1>
+        <div class="answer" id="answer"></div>
+        <div class="emoji" id="emoji"></div>
+        <p class="message" id="message"></p>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4747589340489317"
+                 crossorigin="anonymous"></script>
+            <!-- banner -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4747589340489317"
+                 data-ad-slot="7884054052"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+    </div>
+    <script>
+        const dayInfo = [
+            { day: 'Sunday', emoji: '😴', message: "Relax, it's the weekend!" },
+            { day: 'Monday', emoji: '☕', message: "New week, new opportunities!" },
+            { day: 'Tuesday', emoji: '💪', message: "Keep the momentum going!" },
+            { day: 'Wednesday', emoji: '🐪', message: "Hump day! Half-way there!" },
+            { day: 'Thursday', emoji: '🚀', message: "One more push before Friday!" },
+            { day: 'Friday', emoji: '🎉', message: "TGIF! Weekend is near!" },
+            { day: 'Saturday', emoji: '🌞', message: "Enjoy your weekend!" }
+        ];
+        
+        const today = new Date().getDay();
+        const currentDay = dayInfo[today];
+        
+        document.getElementById('answer').textContent = currentDay.day.toUpperCase();
+        document.getElementById('emoji').textContent = currentDay.emoji;
+        document.getElementById('message').textContent = currentDay.message;
+        
+    </script>
 </body>
 </html>
