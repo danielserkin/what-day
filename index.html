@@ -1,91 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Day Is It?</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 90%;
-            width: 400px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .answer {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-        .emoji {
-            font-size: 5rem;
-            margin-bottom: 1rem;
-        }
-        .message {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .ad-space {
-            margin-top: 2rem;
-            padding: 1rem;
-            background-color: #eee;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Day Is It?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 90%;
+            width: 400px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .answer {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .emoji {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+        .message {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .ad-space {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>What Day Is It?</h1>
-        <div class="answer" id="answer"></div>
-        <div class="emoji" id="emoji"></div>
-        <p class="message" id="message"></p>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4747589340489317"
-                 crossorigin="anonymous"></script>
-            <!-- banner -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-4747589340489317"
-                 data-ad-slot="7884054052"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-    </div>
-    <script>
-        const dayInfo = [
-            { day: 'Sunday', emoji: '😴', message: "Relax, it's the weekend!" },
-            { day: 'Monday', emoji: '☕', message: "New week, new opportunities!" },
-            { day: 'Tuesday', emoji: '💪', message: "Keep the momentum going!" },
-            { day: 'Wednesday', emoji: '🐪', message: "Hump day! Half-way there!" },
-            { day: 'Thursday', emoji: '🚀', message: "One more push before Friday!" },
-            { day: 'Friday', emoji: '🎉', message: "TGIF! Weekend is near!" },
-            { day: 'Saturday', emoji: '🌞', message: "Enjoy your weekend!" }
-        ];
-        
-        const today = new Date().getDay();
-        const currentDay = dayInfo[today];
-        
-        document.getElementById('answer').textContent = currentDay.day.toUpperCase();
-        document.getElementById('emoji').textContent = currentDay.emoji;
-        document.getElementById('message').textContent = currentDay.message;
-        
-    </script>
+    <div class="container">
+        <h1>What Day Is It?</h1>
+        <div class="answer" id="answer"></div>
+        <div class="emoji" id="emoji"></div>
+        <p class="message" id="message"></p>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4747589340489317"
+                 crossorigin="anonymous"></script>
+            <!-- banner -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4747589340489317"
+                 data-ad-slot="7884054052"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+    </div>
+    <script>
+        const dayInfo = [
+            { day: 'Sunday', emoji: '😴', message: "Relax, it's the weekend!" },
+            { day: 'Monday', emoji: '☕', message: "New week, new opportunities!" },
+            { day: 'Tuesday', emoji: '💪', message: "Keep the momentum going!" },
+            { day: 'Wednesday', emoji: '🐪', message: "Hump day! Half-way there!" },
+            { day: 'Thursday', emoji: '🚀', message: "One more push before Friday!" },
+            { day: 'Friday', emoji: '🎉', message: "TGIF! Weekend is near!" },
+            { day: 'Saturday', emoji: '🌞', message: "Enjoy your weekend!" }
+        ];
+        
+        const today = new Date().getDay();
+        const currentDay = dayInfo[today];
+        
+        document.getElementById('answer').textContent = currentDay.day.toUpperCase();
+        document.getElementById('emoji').textContent = currentDay.emoji;
+        document.getElementById('message').textContent = currentDay.message;
+        
+    </script>
 </body>
 </html>
